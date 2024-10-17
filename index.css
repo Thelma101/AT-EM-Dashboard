@@ -122,6 +122,11 @@ header h1 {
 }
 
 /* Chart and News Sections */
+
+.event-reg {
+    display: flex;
+}
+
 .chart-section,
 .news-section {
   margin-top: 40px;
