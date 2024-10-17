@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="h-screen bg-gray-100 flex font-inter">
+
+    <div class="dashboard flex w-full">
+        <nav class="sidebar w-1/5 bg-gray-800 text-white flex flex-col justify-between p-5">
+            <div class="logo text-center text-xl font-bold mb-8">Full Logo</div>
+            <ul class="nav-links list-none">
+                <li class="mb-4"><a href="#" class="text-lg">Home</a></li>
+                <li class="mb-4"><a href="#" class="text-lg">Events</a></li>
+                <li class="mb-4"><a href="#" class="text-lg">Speakers</a></li>
+                <li class="mb-4"><a href="#" class="text-lg">Reports</a></li>
+                <li class="mb-4"><a href="#" class="text-lg">Notifications</a></li>
+                <li class="mb-4"><a href="#" class="text-lg">Messages</a></li>
+                <li><a href="#" class="text-lg">Settings</a></li>
+            </ul>
+            <div>
+                <button class="collapse mt-5 w-full py-2 bg-gray-600 text-white text-center">Collapse</button>
+                <button class="dark-mode-toggle mt-2 w-full py-2 bg-gray-600 text-white text-center">Dark Mode</button>
+            </div>
+        </nav>
+
+        <div class="main-content w-4/5 p-5">
+            <header>
+                <h1 class="text-2xl font-medium mb-8 text-shadow-lg">Welcome! Here's your summary</h1>
+            </header>
+
+            <section class="summary-cards flex justify-between mb-10">
+                <div class="card bg-white p-6 shadow-md rounded-lg w-1/4 flex flex-col gap-3">
+                    <div class="flex justify-between items-center">
+                        <p class="text-gray-600">Total Events</p>
+                        <img src="./assets/Vector.svg" />
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <h2 class="text-2xl font-semibold text-gray-800">100,000</h2>
+                        <img src="./assets/arrow-up-right.svg" />
+                        <span class="text-green-500 text-xs font-semibold">+5.0%</span>
+                    </div>
+                </div>
+                <div class="card bg-white p-6 shadow-md rounded-lg w-1/4">
+                    <p class="text-gray-600">Active Speakers</p>
+                    <h2 class="text-2xl font-semibold text-gray-800">25</h2>
+                </div>
+                <div class="card bg-white p-6 shadow-md rounded-lg w-1/4">
+                    <p class="text-gray-600">Total Registrations</p>
+                    <h2 class="text-2xl font-semibold text-gray-800">300</h2>
+                </div>
+                <div class="card bg-white p-6 shadow-md rounded-lg w-1/4">
+                    <p class="text-gray-600">Total Revenue</p>
+                    <h2 class="text-2xl font-semibold text-gray-800">$500,000</h2>
+                </div>
+            </section>
+
+            <section class="event-section">
+                <h3 class="text-xl font-semibold mb-4">Event Registrations per month</h3>
+                <div class="event-reg flex gap-2">
+                    <div class="event-chart">
+                        <img src="./assets/Slide.svg" alt="Chart">
+                    </div>
+                    <div class="event-details flex flex-wrap">
+                        <div class="event-image">
+                            <img src="./assets/Slide.svg" alt="Event Image" class="rounded-lg">
+                        </div>
+                        <div class="news mt-8 text-white">
+                            <h5 class="text-xl">Latest News & Updates</h5>
+                            <p class="mt-2">Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events-history mt-10">
+                <h3 class="text-xl font-semibold mb-4">Events History</h3>
+                <table class="w-full table-auto border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="bg-gray-200 text-left p-3 text-lg">Event Name</th>
+                            <th class="bg-gray-200 text-left p-3 text-lg">Date</th>
+                            <th class="bg-gray-200 text-left p-3 text-lg">Speaker</th>
+                            <th class="bg-gray-200 text-left p-3 text-lg">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b">
+                            <td class="p-3">Cloud Innovation Summit</td>
+                            <td class="p-3">2024-10-15</td>
+                            <td class="p-3">Jane Doe</td>
+                            <td class="p-3">
+                                <span class="bg-green-500 text-white px-3 py-1 rounded-full">Completed</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
