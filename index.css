@@ -96,7 +96,6 @@ header h1 {
 .card p {
   font-size: 16px;
   color: #888;
-  /* color: gray -5px; */
 }
 
 .card h2 {
@@ -106,51 +105,66 @@ header h1 {
 }
 
 .card-row-1 {
-    display: flex;
+  display: flex;
 }
 
 .card-row-2 {
-    display: flex;
-    gap: 4px;
+  display: flex;
+  gap: 4px;
 }
 
-.card-percentage h2{
-    color:#28a745;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 12px;
+.card-percentage h2 {
+  color: #28a745;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
 }
 
-/* Chart and News Sections */
-
-.event-reg {
-    display: flex;
-}
-
-.chart-section,
-.news-section {
+.event-section {
   margin-top: 40px;
 }
 
-.chart-placeholder img,
-.news img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.event-section h3 {
+  font-size: 18px;
+  line-height: 12px;
+  margin: 20px 0px;
 }
 
-.news {
-  margin-top: 30px;
+.event-reg {
+  display: flex;
+  gap: 8px;
+}
+
+.event-reg img {
+    border-radius: 4px;
+}
+
+.event-details {
+    flex-wrap: wrap;
+}
+
+.event-reg .news {
+    position: relative;
+    top: -30%;
+    margin: 30px ;
+    flex-wrap: wrap;
+}
+
+.news h5 {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
+
 }
 
 .news p {
   margin-top: 10px;
-  font-size: 1.2rem;
-  color: #333;
-  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: #fff;
 }
 
-/* Events History */
 .events-history {
   margin-top: 40px;
 }
