@@ -94,15 +94,31 @@ header h1 {
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 16px;
   color: #888;
   /* color: gray -5px; */
 }
 
 .card h2 {
-  font-size: 2rem;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-top: 20px;
   color: #334155;
+}
+
+.card-row-1 {
+    display: flex;
+}
+
+.card-row-2 {
+    display: flex;
+    gap: 4px;
+}
+
+.card-percentage h2{
+    color:#28a745;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
 }
 
 /* Chart and News Sections */
