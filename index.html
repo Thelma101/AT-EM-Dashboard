@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">Full Logo</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Notifications</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <div class="collapse">Collapse</div>
+            <button class="dark-mode-toggle">Dark Mode</button>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Welcome! Here's your summary</h1>
+            </header>
+
+            <section class="summary-cards">
+                <div class="card">
+                    <div>
+                        <div>
+                            <p>Total Events</p>
+                        </div>
+                        <div>
+                            <img src="" />
+                        </div>
+                    </div>
+
+                    <h2>100,000</h2>
+                </div>
+                <div class="card">
+                    <p>Active Speakers</p>
+                    <h2>25</h2>
+                </div>
+                <div class="card">
+                    <p>Total Registrations</p>
+                    <h2>300</h2>
+                </div>
+                <div class="card">
+                    <p>Total Revenue</p>
+                    <h2>$500,000</h2>
+                </div>
+            </section>
+
+            <!-- Chart Section -->
+            <section class="chart-section">
+                <h3>Event Registrations per month</h3>
+                <div class="chart-placeholder">
+                    <img src="chart-placeholder.png" alt="Chart">
+                </div>
+            </section>
+
+            <!-- News Section -->
+            <section class="news-section">
+                <div class="news">
+                    <img src="news-placeholder.jpg" alt="News">
+                    <p>Latest News & Updates</p>
+                </div>
+            </section>
+
+            <!-- Events History Table -->
+            <section class="events-history">
+                <h3>Events History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Date</th>
+                            <th>Speaker</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cloud Innovation Summit</td>
+                            <td>2024-10-15</td>
+                            <td>Jane Doe</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
