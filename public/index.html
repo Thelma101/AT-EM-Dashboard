@@ -98,32 +98,37 @@
                     </div>
                     <div class="p-4 absolute bottom-4">
                         <p class="text-white text-[12px] font-bold mb-2">Latest News & Updates</p>
-                        <p class="text-white text-[12px]">Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                        <p class="text-white text-[12px]">Turpis interdum nunc varius ornare dignissim pretium. Massa
+                            ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat
+                            fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <div class="p-6 bg-white text-[14px] leading-5 mt-8">
-            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-4 gap-4">
-                <div class="flex w-full lg:w-auto relative">
-                    <img src="./assets/search.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2" alt="search icon" />
-                    <input type="text" placeholder="Search..." class="border border-gray-300 rounded-md p-2 pl-10 w-full lg:w-64" />
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-4 gap-2">
+                <div class="flex w-auto lg:w-auto relative">
+                    <img src="./assets/search.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2"
+                        alt="search icon" />
+                    <input type="text" placeholder="Search..."
+                        class="border border-grey-300 rounded-sm p-2 pl-10 w-full lg:w-64" />
                 </div>
-                <div class="flex gap-4 items-center w-full lg:w-auto">
-                    <select class="border border-gray-200 rounded-md p-2">
+
+                <div class="flex justify-center items-center gap-2 w-full lg:w-auto">
+                    <select class="border border-gray-200 rounded-sm py-2 text-center">
                         <option>Date</option>
                         <option>Ascending</option>
                         <option>Descending</option>
                     </select>
 
-                    <select class="border border-gray-200 rounded-md p-2">
+                    <select class="border border-gray-200 rounded-sm p-2">
                         <option>Status</option>
                         <option>Completed</option>
                         <option>In Progress</option>
                     </select>
 
-                    <select class="border border-gray-200 rounded-md p-2">
+                    <select class="border border-gray-200 rounded-sm p-2">
                         <option>Name</option>
                         <option>Ascending</option>
                         <option>Descending</option>
@@ -131,23 +136,29 @@
 
                     <p class="text-sm text-gray-700">Displaying 100 results</p>
 
-                    <select class="border border-gray-200 rounded-md p-2">
-                        <option>Sort: Most Recent</option>
+                    <p class="text-sm text-gray-600">Sort:</p>
+                    <select class="flex border border-gray-200 rounded-sm p-2">
+                        <option>Most Recent</option>
                         <option>Oldest</option>
                     </select>
-                    <div class="flex justify-between items-center mb-4">
-                        <div class="flex items-center space-x-4">
-                                <img src="assets/Icon Button.svg" />
-                        </div>
+                    <!-- <div class="flex justify-between items-center mb-4"> -->
 
-                        <div class="flex items-center">
-                          <button class="flex items-center space-x-2 text-grey-500 py-2 px-4 rounded-sm shadow">
+                    <!-- <div class="flex items-center border border-gray-200 rounded-sm p-2">
+                            <button class="flex items-center ">
+                                <img src="assets/Icon Button.svg" alt="Action Button" />
+                            </button>
+                        </div> -->
+                    <img src="assets/Icon Button.svg" alt="Action Button" />
+
+
+                    <div class="flex items-center">
+                        <button class="flex items-center space-x-2 text-grey-500 py-2 px-4 rounded-sm shadow">
                             <img src="./assets/download.svg" />
                             <span>Export</span>
-                          </button>
-                        </div>
-                      </div>
-                      
+                        </button>
+                    </div>
+                    <!-- </div> -->
+
                 </div>
             </div>
 
@@ -166,7 +177,8 @@
                         <td class="p-3">2024-10-15</td>
                         <td class="p-3">Jane Doe</td>
                         <td class="p-3">
-                            <span class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                            <span
+                                class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
                         </td>
                     </tr>
                     <tr>
@@ -174,20 +186,21 @@
                         <td class="p-3">2024-11-01</td>
                         <td class="p-3">John Smith</td>
                         <td class="p-3">
-                            <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In Progress</span>
+                            <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
+                                Progress</span>
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div class="flex justify-between items-center mt-4">
                 <div class="flex space-x-2">
-                    <button class="px-3 py-1 bg-gray-200 rounded-md  ">1</button>
-                    <button class="px-3 py-1 bg-gray-200 rounded-md  ">2</button>
-                    <button class="px-3 py-1 bg-gray-200 rounded-md  ">3</button>
+                    <button class="px-3 py-1 bg-gray-200  rounded-sm  ">1</button>
+                    <button class="px-3 py-1 bg-gray-200  rounded-sm  ">2</button>
+                    <button class="px-3 py-1 bg-gray-200  rounded-sm  ">3</button>
                 </div>
                 <div class="flex items-center">
                     <p class="text-gray-500 mr-2">Show:</p>
-                    <select class="border border-gray-300 rounded-md p-1">
+                    <select class="border border-gray-300  rounded-sm p-1">
                         <option>10</option>
                         <option>20</option>
                         <option>50</option>
@@ -197,7 +210,7 @@
             </div>
         </div>
 
-        </div>
+    </div>
     </div>
 </body>
 
