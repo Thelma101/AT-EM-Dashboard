@@ -30,3 +30,25 @@ document.querySelector('.dark-mode-toggle').addEventListener('click', function()
   styleSheet.innerText = darkModeStyles;
   document.head.appendChild(styleSheet);
   
+  // ?carousel
+    const carousel = document.getElementById('carousel');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    
+    let currentIndex = 0;
+    const totalImages = carousel.children.length;
+
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    next.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalImages;
+        updateCarousel();
+    });
+
+    prev.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        updateCarousel();
+    });
