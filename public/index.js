@@ -25,30 +25,26 @@ document.querySelector('.dark-mode-toggle').addEventListener('click', function()
     }
   `;
   
-  const styleSheet = document.createElement('style');
-  styleSheet.type = 'text/css';
-  styleSheet.innerText = darkModeStyles;
-  document.head.appendChild(styleSheet);
+  const carousel = document.getElementById('carousel');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
   
-  // ?carousel
-    const carousel = document.getElementById('carousel');
-    const prev = document.getElementById('prev');
-    const next = document.getElementById('next');
-    
-    let currentIndex = 0;
-    const totalImages = carousel.children.length;
-
-    function updateCarousel() {
-        const offset = -currentIndex * 100;
-        carousel.style.transform = `translateX(${offset}%)`;
-    }
-
-    next.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % totalImages;
-        updateCarousel();
-    });
-
-    prev.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-        updateCarousel();
-    });
+  let currentIndex = 0;
+  const totalItems = carousel.children.length; // Total number of slides
+  
+  function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+  }
+  
+  // Add event listeners for 'Next' and 'Prev' buttons
+  next.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalItems; // Move forward and loop back at the end
+      updateCarousel();
+  });
+  
+  prev.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalItems) % totalItems; // Move backward and loop to the last item
+      updateCarousel();
+  });
+  

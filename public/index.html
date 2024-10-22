@@ -114,28 +114,28 @@
                 </div>
         
                 <!-- Carousel Section -->
-                <div class="event-slider-container relative w-full lg:w-1/2 overflow-hidden">
-                    <div class="carousel flex transition-transform duration-300 ease-in-out" id="carousel" style="transform: translateX(0%);">
+                <div class="relative w-full lg:w-1/2 overflow-hidden">
+                    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
                         <!-- Slide 1 -->
-                        <div class="carousel-item flex-none w-full">
+                        <div class="carousel-item w-full flex-shrink-0">
                             <img src="./assets/Slide1.svg" alt="Event Image 1" class="w-full h-auto rounded-sm">
-                            <div class="carousel-caption absolute bottom-4 left-4">
+                            <div class="p-4 absolute bottom-4">
                                 <p class="text-white text-[12px] font-bold mb-2">Latest News & Updates</p>
                                 <p class="text-white text-[12px]">Turpis interdum nunc varius ornare dignissim pretium. Massa ornare quis aliquet sed vitae...</p>
                             </div>
                         </div>
                         <!-- Slide 2 -->
-                        <div class="carousel-item flex-none w-full">
+                        <div class="carousel-item w-full flex-shrink-0">
                             <img src="./assets/Slide2.svg" alt="Event Image 2" class="w-full h-auto rounded-sm">
-                            <div class="carousel-caption absolute bottom-4 left-4">
+                            <div class="p-4 absolute bottom-4">
                                 <p class="text-white text-[12px] font-bold mb-2">Latest News & Updates</p>
                                 <p class="text-white text-[12px]">Sed velit nisi, fermentum erat. Fringilla purus, erat fringilla tincidunt quisque non...</p>
                             </div>
                         </div>
                         <!-- Slide 3 -->
-                        <div class="carousel-item flex-none w-full">
+                        <div class="carousel-item w-full flex-shrink-0">
                             <img src="./assets/Slide3.svg" alt="Event Image 3" class="w-full h-auto rounded-sm">
-                            <div class="carousel-caption absolute bottom-4 left-4">
+                            <div class="p-4 absolute bottom-4">
                                 <p class="text-white text-[12px] font-bold mb-2">Latest News & Updates</p>
                                 <p class="text-white text-[12px]">Pellentesque in ut tellus. Turpis interdum nunc varius ornare dignissim pretium...</p>
                             </div>
@@ -143,18 +143,18 @@
                     </div>
         
                     <!-- Carousel Controls -->
-                    <button class="carousel-control absolute left-0 top-[50%] translate-y-[-50%] bg-white p-2 rounded-full" id="prev">
+                    <button id="prev" class="absolute left-0 top-[50%] translate-y-[-50%] bg-white p-2 rounded-full">
                         <img src="./assets/Left Button.svg" alt="Prev Icon">
                     </button>
-                    <button class="carousel-control absolute right-0 top-[50%] translate-y-[-50%] bg-white p-2 rounded-full" id="next">
+                    <button id="next" class="absolute right-0 top-[50%] translate-y-[-50%] bg-white p-2 rounded-full">
                         <img src="./assets/Right Button.svg" alt="Next Icon">
                     </button>
                 </div>
             </div>
         </section>
+        
+        
 
-        
-        
         <div class="p-6 bg-white text-[14px] leading-5 mt-8">
             <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between mb-4 gap-2">
                 <div class="flex w-auto lg:w-auto relative">
@@ -254,6 +254,10 @@
 
     </div>
     </div>
+    <!-- <script>
+        // index.js
+    </script> -->
+    <script src="index.js"></script>
 </body>
 
 </html>
