@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Management Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link href="/dist/output.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-gray-100 flex h-screen">
@@ -25,7 +27,7 @@
             <button class="w-full py-2 mt-2 bg-gray-600 text-white text-center">Dark Mode</button>
         </div>
     </nav>
-
+    npx tailwindcss -i ./src/styles.css -o ./dist/output.css --minify
     <div class="w-4/5 p-8 pt-6">
         <header>
             <h1 class="text-[22px] leading-5 font-semibold mb-8">Welcome! Here's your summary</h1>
