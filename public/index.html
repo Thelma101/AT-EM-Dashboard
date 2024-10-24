@@ -117,7 +117,7 @@
             </div>
         </section>
 
-        <!-- <section class="p-6 bg-white text-[14px] leading-5 mt-8">
+        <section class="p-6 bg-white text-[14px] leading-5 mt-8">
             <div class="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
 
                 <div class="relative w-full lg:w-auto">
@@ -167,7 +167,7 @@
                     </button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <section>
             <div class="bg-white p-6 rounded-lg shadow-md">
@@ -181,17 +181,20 @@
                                 <th class="p-2">Status</th>
                             </tr>
                         </thead>
-                        <tbody >
+                        <tbody>
+                            <button class="text-blue-500" onclick="showDetails('Event1')">
+                                <tr class="border-b">
+                                    <td class="p-2 text-14 leading-3 text-gray-600">Cloud Innovation Summit</td>
+                                    <td class="p-2 text-gray-600">2024-10-15</td>
+                                    <td class="p-2 text-gray-600">Jane Doe</td>
+                                    <td class="p-2">
+                                        <span
+                                            class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                    </td>
+
+                                </tr>
+                            </button>
                             <tr class="border-b">
-                                <td class="p-2 text-14 leading-3 text-gray-600">Cloud Innovation Summit</td>
-                                <td class="p-2 text-gray-600">2024-10-15</td>
-                                <td class="p-2 text-gray-600">Jane Doe</td>
-                                <td class="p-2">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b bg-blue-50">
                                 <td class="p-2 text-gray-600">Blockchain Revolution Conference</td>
                                 <td class="p-2 text-gray-600">2024-11-05</td>
                                 <td class="p-2 text-gray-600">Dr. Peter Smith</td>
@@ -200,75 +203,74 @@
                                         Progress</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">AI in Healthcare Symposium</td>
-                                <td class="p-3">2024-12-01</td>
-                                <td class="p-3">Dr. Aisha Malik</td>
-                                <td class="p-3">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-3">Future of Fintech Forum</td>
-                                <td class="p-3">2024-10-25</td>
-                                <td class="p-3">John Lee</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">AI in Healthcare Symposium</td>
+                                <td class="p-2 text-gray-600">2024-12-01</td>
+                                <td class="p-2 text-gray-600">Dr. Aisha Malik</td>
+                                <td class="p-2">
                                     <span
                                         class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">Data Analytics in Business</td>
-                                <td class="p-3">2024-11-12</td>
-                                <td class="p-3">Rachael Moore</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Future of Fintech Forum</td>
+                                <td class="p-2 text-gray-600">2024-10-25</td>
+                                <td class="p-2">John Lee</td>
+                                <td class="p-2">
+                                    <span
+                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Data Analytics in Business</td>
+                                <td class="p-2 text-gray-600">2024-11-12</td>
+                                <td class="p-2 text-gray-600">Rachael Moore</td>
+                                <td class="p-2">
                                     <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
                                         Progress</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">Sustainable Energy Expo</td>
-                                <td class="p-3">2024-09-28</td>
-                                <td class="p-3">Prof. Alan Green</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Sustainable Energy Expo</td>
+                                <td class="p-2 text-gray-600">2024-09-28</td>
+                                <td class="p-2 text-gray-600">Prof. Alan Green</td>
+                                <td class="p-2">
                                     <span
                                         class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">Web3 Interfaces Workshop</td>
-                                <td class="p-3">2024-10-10</td>
-                                <td class="p-3">Kevin Adams</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Web3 Interfaces Workshop</td>
+                                <td class="p-2 text-gray-600">2024-10-10</td>
+                                <td class="p-2 text-gray-600">Kevin Adams</td>
+                                <td class="p-2">
                                     <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
                                         Progress</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">Cybersecurity for Startups</td>
-                                <td class="p-3">2024-11-19</td>
-                                <td class="p-3">Emily Zhang</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Cybersecurity for Startups</td>
+                                <td class="p-2 text-gray-600">2024-11-19</td>
+                                <td class="p-2 text-gray-600">Emily Zhang</td>
+                                <td class="p-2">
                                     <span
                                         class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">Cybersecurity for Startups</td>
-                                <td class="p-3">2024-10-18</td>
-                                <td class="p-3">Dr. Maria Hernandez</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Cybersecurity for Startups</td>
+                                <td class="p-2 text-gray-600">2024-10-18</td>
+                                <td class="p-2 text-gray-600">Dr. Maria Hernandez</td>
+                                <td class="p-2">
                                     <span
                                         class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
                                 </td>
                             </tr>
-                            <tr>
-                                <td class="p-3">Tech Safari Mixer</td>
-                                <td class="p-3">2024-09-30</td>
-                                <td class="p-3"> Guest Panel</td>
-                                <td class="p-3">
+                            <tr class="border-b">
+                                <td class="p-2 text-gray-600">Tech Safari Mixer</td>
+                                <td class="p-2 text-gray-600">2024-09-30</td>
+                                <td class="p-2 text-gray-600"> Guest Panel</td>
+                                <td class="p-2">
                                     <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
                                         Progress</span>
                                 </td>
@@ -280,7 +282,7 @@
                 <!-- mobile -->
                 <section>
                     <div
-                        class="md:hidden space-y-4 w-full table-auto border-collapse text-[14px] mb-8 text-gray-600 leading-5">
+                        class="md:hidden space-y-4 text-xs w-full table-auto border-collapse text-[14px] mb-8 text-gray-600 leading-5">
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
                                 <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
@@ -329,7 +331,7 @@
 
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
-                                <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
                                     <img src="assets/chevron-right.svg"
                                         class="chevron-icon transition-transform duration-300" />
                                 </button>
@@ -352,7 +354,7 @@
 
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
-                                <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
                                     <img src="assets/chevron-right.svg"
                                         class="chevron-icon transition-transform duration-300" />
                                 </button>
@@ -375,7 +377,7 @@
 
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
-                                <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
                                     <img src="assets/chevron-right.svg"
                                         class="chevron-icon transition-transform duration-300" />
                                 </button>
@@ -398,7 +400,7 @@
 
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
-                                <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
                                     <img src="assets/chevron-right.svg"
                                         class="chevron-icon transition-transform duration-300" />
                                 </button>
@@ -421,7 +423,7 @@
 
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
-                                <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
                                     <img src="assets/chevron-right.svg"
                                         class="chevron-icon transition-transform duration-300" />
                                 </button>
@@ -444,7 +446,7 @@
 
                         <div class="bg-white p-4 rounded-lg shadow-md">
                             <div class="flex justify-between items-center">
-                                <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
                                     <img src="assets/chevron-right.svg"
                                         class="chevron-icon transition-transform duration-300" />
                                 </button>
