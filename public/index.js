@@ -85,3 +85,4 @@ function toggleDetails(element) {
   const chevronIcon = element.querySelector('.chevron-icon');
   chevronIcon.classList.toggle('rotate-90');
 }
+
