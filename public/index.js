@@ -70,13 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
   startAutoRotate();
 });
 
-function toggleDetails(button) {
-  const details = button.parentElement.nextElementSibling;
-  if (details.classList.contains('hidden')) {
-      details.classList.remove('hidden');
-      button.textContent = 'Less';
-  } else {
-      details.classList.add('hidden');
-      button.textContent = 'More';
-  }
+// function toggleDetails(element) {
+//   const details = element.parentElement.nextElementSibling; 
+//   details.classList.toggle('hidden');
+  
+//   const chevronIcon = element.querySelector('img');
+//   chevronIcon.classList.toggle('rotate-90');
+// }
+
+function toggleDetails(element) {
+  const details = element.closest('.bg-white').querySelector('.details-section');
+  details.classList.toggle('hidden');
+
+  const chevronIcon = element.querySelector('.chevron-icon');
+  chevronIcon.classList.toggle('rotate-90');
 }
