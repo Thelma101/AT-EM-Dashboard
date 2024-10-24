@@ -69,3 +69,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   startAutoRotate();
 });
+
+function toggleDetails(button) {
+  const details = button.parentElement.nextElementSibling;
+  if (details.classList.contains('hidden')) {
+      details.classList.remove('hidden');
+      button.textContent = 'Less';
+  } else {
+      details.classList.add('hidden');
+      button.textContent = 'More';
+  }
+}
