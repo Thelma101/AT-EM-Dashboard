@@ -75,83 +75,86 @@
 
 </section> -->
 
-    <section class=" flex flex-row">
-        <div class="min-h-screen flex flex-col">
-            <!-- Sidebar for mobile -->
-            <!-- <div class="fixed inset-0 z-50 bg-opacity-75 transition-opacity lg:hidden" id="mobile-menu-overlay"></div> -->
-            <nav class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"
-                id="sidebar">
-                <div class="p-4 flex items-center justify-between lg:justify-center">
-                    <img src="assets/Logo.svg" alt="Full Logo" class="w-24 lg:w-32" />
-                    <button id="close-mobile-menu" class="lg:hidden text-gray-500 dark:text-gray-300">
-                        <i class="fas fa-times"></i>
-                    </button>
+    <!-- <section class=" flex flex-row"> -->
+    <section class="flex flex-row min-h-screen">
+        <!-- <nav class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"
+            id="sidebar"> -->
+        <nav id="sidebar"
+            class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full">
+            <div class="p-4 flex items-center justify-between lg:justify-center">
+                <img src="assets/Logo.svg" alt="Full Logo" class="w-24 lg:w-32" />
+                <button id="close-mobile-menu" class="lg:hidden text-gray-500 dark:text-gray-300">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mt-6">
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/home.svg" alt="Home Icon" class="w-4 h-4" />
+                    <span>Home</span>
+                </li>
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/events.svg" alt="Events Icon" class="w-4 h-4">
+                    <span>Events</span>
+                </li>
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/speakers.svg" alt="Speakers Icon" class="w-4 h-4">
+                    <span>Speakers</span>
+                </li>
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/reports.svg" alt="Reports Icon" class="w-4 h-4">
+                    <span>Reports</span>
+                </li>
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/bell.svg" alt="Notifications Icon" class="w-4 h-4">
+                    <span>Notifications</span>
+                    <span class="ml-auto text-xs bg-red-600 text-white rounded-full px-2 py-0.5">3</span>
+                </li>
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-4 h-4">
+                    <span>Messages</span>
+                </li>
+                <li
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                    <img src="assets/settings-2.svg" alt="Settings Icon" class="w-4 h-4">
+                    <span>Settings</span>
+                </li>
+            </ul>
+            <div class="mt-6 px-4">
+                <!-- <button id="toggle-dark-mode"
+                    class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button> -->
+
+                <button id="toggle-dark-mode"
+                    class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+
+
+                <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
+                    <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
+                    <p>Rudra Devi</p>
+                    <p>rudra.devi@gmail.com</p>
                 </div>
-                <ul class="mt-6">
-                    <!-- Menu Items with Icons -->
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/home.svg" alt="Home Icon" class="w-4 h-4" />
-                        <span>Home</span>
-                    </li>
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/events.svg" alt="Events Icon" class="w-4 h-4">
-                        <span>Events</span>
-                    </li>
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/speakers.svg" alt="Speakers Icon" class="w-4 h-4">
-                        <span>Speakers</span>
-                    </li>
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/reports.svg" alt="Reports Icon" class="w-4 h-4">
-                        <span>Reports</span>
-                    </li>
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/bell.svg" alt="Notifications Icon" class="w-4 h-4">
-                        <span>Notifications</span>
-                        <span class="ml-auto text-xs bg-red-600 text-white rounded-full px-2 py-0.5">3</span>
-                    </li>
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-4 h-4">
-                        <span>Messages</span>
-                    </li>
-                    <li
-                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                        <img src="assets/settings-2.svg" alt="Settings Icon" class="w-4 h-4">
-                        <span>Settings</span>
-                    </li>
-                </ul>
-                <div class="mt-6 px-4">
-                    <button id="toggle-dark-mode"
-                        class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
-                        <i class="fas fa-moon"></i>
-                        <span>Dark Mode</span>
-                    </button>
-                    <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
-                        <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
-                        <p>Rudra Devi</p>
-                        <p>rudra.devi@gmail.com</p>
-                    </div>
-                </div>
-            </nav>
+            </div>
+        </nav>
+    </section>
 
-            <!-- Mobile Menu Open Button -->
-            <button id="open-mobile-menu" class="lg:hidden fixed top-4 left-4 z-50 text-gray-500 dark:text-gray-300">
-                <i class="fas fa-bars"></i>
-            </button>
+    <button id="open-mobile-menu" class="lg:hidden fixed top-4 left-4 z-50 text-gray-500 dark:text-gray-300">
+        <img src="home" />
+    </button>
 
-            <!-- Main Content -->
-            <main class="flex-1 bg-gray-100 dark:bg-gray-900 p-8">
-                <!-- Content here -->
-            </main>
-        </div>
-
-        <section class="w-4/5 p-8 pt-6">
+    <!-- <main class="flex-1 flex-row bg-gray-100 dark:bg-gray-900 p-8"> -->
+    <main class="flex-1 lg:ml-64 bg-gray-100 dark:bg-gray-900 p-8">
+        <section class=" bg-gray-100 p-8 pt-6">
             <header>
                 <h1 class="text-[22px] leading-5 font-semibold mb-8">Welcome! Here's your summary</h1>
             </header>
@@ -190,7 +193,6 @@
                         <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
                     <div class="flex gap-2 items-center">
                         <p class="text-gray-500">Total Revenue</p>
@@ -239,7 +241,6 @@
                     </div>
                 </div>
             </section>
-
 
             <section class="p-4 bg-white text-[14px] leading-5 mt-8 overflow-x-auto">
                 <div class="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
@@ -292,7 +293,6 @@
                     </div>
                 </div>
             </section>
-
 
             <section>
                 <div class="bg-white p-6 rounded-lg shadow-md">
@@ -623,16 +623,6 @@
                 </div>
             </section>
 
-            <!-- <section>
-            <div class="bg-white flex md:hidden lg:hidden xl:hidden justify-between ">
-                <img src="assets/home.svg" alt="Home Picture" class="p-2" />
-                <img src="assets/events.svg" alt="Event Picture" class="p-2" />
-                <img src="assets/speakers.svg" alt="Speaker Picture" class="p-2" />
-                <img src="assets/reports.svg" alt="Report Picture" class="p-2" />
-                <img src="assets/profile.svg" alt="Profile Picture" class="p-2" />
-            </div>
-        </section> -->
-
             <section class="lg:hidden">
                 <div class="bg-white flex justify-between p-2">
                     <img src="assets/home.svg" alt="Home" />
@@ -643,7 +633,11 @@
                 </div>
             </section>
         </section>
-    </section>
+        </section>
+    </main>
+
+
+
 
     <!-- </div> -->
     <script src="index.js"></script>

@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentIndex = 0;
     const totalItems = slides.length;
-    const autoRotateInterval = 3000;
+    const autoRotateInterval = 3000;    
     let autoRotate;
 
     function updateCarousel() {
@@ -91,14 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startAutoRotate();
 });
-
-// function toggleDetails(element) {
-//   const details = element.parentElement.nextElementSibling; 
-//   details.classList.toggle('hidden');
-
-//   const chevronIcon = element.querySelector('img');
-//   chevronIcon.classList.toggle('rotate-90');
-// }
 
 function toggleDetails(element) {
     const details = element.closest('.bg-white').querySelector('.details-section');
