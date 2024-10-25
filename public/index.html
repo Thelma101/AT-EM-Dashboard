@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="bg-gray-100 flex h-screen">
+<body class="">
     <!-- <nav class="w-1/5 bg-white text-gray-600 flex flex-col justify-between p-5">
         <div class="logo text-center text-xl font-bold mb-8">Full Logo</div>
         <ul class="space-y-6">
@@ -30,250 +30,249 @@
         </div>
     </nav> -->
 
+    <!-- <section>
     <div class="relative">
-        <!-- Mobile menu button (Hamburger icon) -->
-        <button id="open-mobile-menu" class="absolute top-4 right-4 text-gray-500">
-          <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+        <!-- Mobile menu button (Hamburger icon) 
+                 <button id="open-mobile-menu" class="absolute top-4 right-4 text-gray-500">
+            <i class="fas fa-bars"></i> 
         </button>
-      
-        <!-- Sidebar (Mobile Menu) -->
-        <div id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
-          <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-500">
-            <i class="fas fa-times"></i> <!-- Close Icon -->
-          </button>
-          <nav class="mt-10">
-            <ul>
-              <li class="py-2 px-4">
-                <a href="#" class="flex items-center space-x-2">
-                  <i class="fas fa-home"></i> <!-- Home Icon -->
-                  <span>Home</span>
-                </a>
-              </li>
-              <li class="py-2 px-4">
-                <a href="#" class="flex items-center space-x-2">
-                  <i class="fas fa-home"></i> <!-- Home Icon -->
-                  <span>Home</span>
-                </a>
-              </li>
-              <li class="py-2 px-4">
-                <a href="#" class="flex items-center space-x-2">
-                  <i class="fas fa-home"></i> <!-- Home Icon -->
-                  <span>Home</span>
-                </a>
-              </li>
-              <li class="py-2 px-4">
-                <a href="#" class="flex items-center space-x-2">
-                  <i class="fas fa-home"></i> <!-- Home Icon -->
-                  <span>Home</span>
-                </a>
-              </li>
-
-            </ul>
-          </nav>
-        </div>
-      </div>
-      
-
-    <div class="min-h-screen flex flex-col">
-        <!-- Sidebar for mobile -->
-        <div class="fixed inset-0 z-50 bg-opacity-75 transition-opacity lg:hidden" id="mobile-menu-overlay"></div>
-        <nav
-          class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"
-          id="sidebar">
-          <div class="p-4 flex items-center justify-between lg:justify-center">
-            <img src="assets/Logo.svg" alt="Full Logo" class="w-24 lg:w-32" />
-            <button id="close-mobile-menu" class="lg:hidden text-gray-500 dark:text-gray-300">
-              <i class="fas fa-times"></i>
+        <div id="sidebar"
+            class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
+            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-500">
+                <i class="fas fa-times"></i>
             </button>
-          </div>
-          <ul class="mt-6">
-            <!-- Menu Items with Icons -->
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/home.svg" alt="Home Icon" class="w-4 h-4" />
-              <span>Home</span>
-            </li>
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/events.svg" alt="Events Icon" class="w-4 h-4">
-              <span>Events</span>
-            </li>
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/speakers.svg" alt="Speakers Icon" class="w-4 h-4">
-              <span>Speakers</span>
-            </li>
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/reports.svg" alt="Reports Icon" class="w-4 h-4">
-              <span>Reports</span>
-            </li>
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/bell.svg" alt="Notifications Icon" class="w-4 h-4">
-              <span>Notifications</span>
-              <span class="ml-auto text-xs bg-red-600 text-white rounded-full px-2 py-0.5">3</span>
-            </li>
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-4 h-4">
-              <span>Messages</span>
-            </li>
-            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-              <img src="assets/settings-2.svg" alt="Settings Icon" class="w-4 h-4">
-              <span>Settings</span>
-            </li>
-          </ul>
-          <div class="mt-6 px-4">
-            <button id="toggle-dark-mode" class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
-              <i class="fas fa-moon"></i>
-              <span>Dark Mode</span>
-            </button>
-            <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
-                <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
-              <p>Rudra Devi</p>
-              <p>rudra.devi@gmail.com</p>
-            </div>
-          </div>
-        </nav>
-      
-        <!-- Mobile Menu Open Button -->
-        <button id="open-mobile-menu" class="lg:hidden fixed top-4 left-4 z-50 text-gray-500 dark:text-gray-300">
-          <i class="fas fa-bars"></i>
-        </button>
-      
-        <!-- Main Content -->
-        <main class="flex-1 bg-gray-100 dark:bg-gray-900 p-8">
-          <!-- Content here -->
-        </main>
-      </div>
-      
-      
-      <!-- Main Content Section -->
-      <!-- <div id="main-content" class="main-content p-4 transition-all duration-300">
-        <div class="logo_wrapper flex items-center justify-between">
-          <div class="logo2 text-gray-900 dark:text-white font-medium">Full Logo</div>
-          <span id="btn2" class="md:hidden">
-            <iconify-icon id="open" icon="solar:hamburger-menu-broken" class="text-2xl cursor-pointer text-gray-700 dark:text-white"></iconify-icon>
-          </span>
+            <nav class="mt-10">
+                <ul>
+                    <li class="py-2 px-4">
+                        <a href="#" class="flex items-center space-x-2">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="py-2 px-4">
+                        <a href="#" class="flex items-center space-x-2">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="py-2 px-4">
+                        <a href="#" class="flex items-center space-x-2">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="py-2 px-4">
+                        <a href="#" class="flex items-center space-x-2">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
-        <!-- Add your main content here -->
-      <!-- </div>  -->
-      
+    </div>
 
-    <div class="w-4/5 p-8 pt-6">
-        <header>
-            <h1 class="text-[22px] leading-5 font-semibold mb-8">Welcome! Here's your summary</h1>
-        </header>
+</section> -->
 
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
-            <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
-                <div class="flex gap-2 items-center">
-                    <p class="text-gray-500">Total Events</p>
-                    <img src="./assets/informationicon.svg" alt="Icon">
-                </div>
-                <div class="flex gap-2 items-center mt-4">
-                    <h2 class="text-2xl font-semibold text-gray-600">100,000</h2>
-                    <img src="./assets/arrow-up-right.svg" alt="Growth">
-                    <span class="text-green-500 text-xs font-semibold leading-3">+5.0%</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
-                <div class="flex gap-2 items-center">
-                    <p class="text-gray-500">Active Speakers</p>
-                    <img src="./assets/informationicon.svg" alt="Icon">
-                </div>
-                <div class="flex gap-2 items-center mt-4">
-                    <h2 class="text-2xl font-semibold text-gray-600">25</h2>
-                    <img src="./assets/arrow-up-right.svg" alt="Growth">
-                    <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
-                </div>
-            </div>
-            <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
-                <div class="flex gap-2 items-center">
-                    <p class="text-gray-500">Total Registrations</p>
-                    <img src="./assets/informationicon.svg" alt="Icon">
-                </div>
-                <div class="flex gap-2 items-center mt-4">
-                    <h2 class="text-2xl font-semibold text-gray-600">300</h2>
-                    <img src="./assets/arrow-up-right.svg" alt="Growth">
-                    <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
-                <div class="flex gap-2 items-center">
-                    <p class="text-gray-500">Total Revenue</p>
-                    <img src="./assets/informationicon.svg" alt="Icon">
-                </div>
-                <div class="flex gap-2 items-center mt-4">
-                    <h2 class="text-2xl font-semibold text-gray-600">$500,000</h2>
-                    <img src="./assets/arrow-up-right.svg" alt="Growth">
-                    <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h3 class="text-xl font-semibold mb-4">Event Registrations per month</h3>
-            <div class="flex flex-col lg:flex-row gap-4">
-                <div class="w-full lg:w-1/2 bg-white">
-                    <img src="./assets/Example.svg" alt="Event Chart" class="w-full h-auto rounded-sm">
-                </div>
-                <div class="relative w-full lg:w-1/2 overflow-hidden">
-                    <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
-                        <div class="carousel-item w-full flex-shrink-0">
-                            <img src="./assets/Slide.svg" alt="Event Image 1" class="w-full h-auto rounded-sm">
-                        </div>
-                        <div class="carousel-item w-full flex-shrink-0">
-                            <img src="./assets/Slide2.svg" alt="Event Image 2" class="w-full h-auto rounded-sm">
-
-                        </div>
-                        <div class="carousel-item w-full flex-shrink-0">
-                            <img src="./assets/Slide3.svg" alt="Event Image 3" class="w-full h-auto rounded-sm">
-                        </div>
-                    </div>
-                    <div class="p-4 absolute bottom-4">
-                        <p class="text-white text-[12px] font-bold mb-2">Latest News & Updates</p>
-                        <p class="text-white text-[12px]">Turpis interdum nunc varius ornare dignissim pretium. Massa
-                            ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat
-                            fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
-                    </div>
-                    <button id="prev" class="absolute left-0 top-[50%] translate-y-[-50%] p-2 rounded-full">
-                        <img src="./assets/Left Button.svg" alt="Prev Icon">
-                    </button>
-                    <button id="next" class="absolute right-0 top-[50%] translate-y-[-50%] p-2 rounded-full">
-                        <img src="./assets/Right Button.svg" alt="Next Icon">
+    <section class=" flex flex-row">
+        <div class="min-h-screen flex flex-col">
+            <!-- Sidebar for mobile -->
+            <!-- <div class="fixed inset-0 z-50 bg-opacity-75 transition-opacity lg:hidden" id="mobile-menu-overlay"></div> -->
+            <nav class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"
+                id="sidebar">
+                <div class="p-4 flex items-center justify-between lg:justify-center">
+                    <img src="assets/Logo.svg" alt="Full Logo" class="w-24 lg:w-32" />
+                    <button id="close-mobile-menu" class="lg:hidden text-gray-500 dark:text-gray-300">
+                        <i class="fas fa-times"></i>
                     </button>
                 </div>
-            </div>
-        </section>
+                <ul class="mt-6">
+                    <!-- Menu Items with Icons -->
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/home.svg" alt="Home Icon" class="w-4 h-4" />
+                        <span>Home</span>
+                    </li>
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/events.svg" alt="Events Icon" class="w-4 h-4">
+                        <span>Events</span>
+                    </li>
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/speakers.svg" alt="Speakers Icon" class="w-4 h-4">
+                        <span>Speakers</span>
+                    </li>
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/reports.svg" alt="Reports Icon" class="w-4 h-4">
+                        <span>Reports</span>
+                    </li>
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/bell.svg" alt="Notifications Icon" class="w-4 h-4">
+                        <span>Notifications</span>
+                        <span class="ml-auto text-xs bg-red-600 text-white rounded-full px-2 py-0.5">3</span>
+                    </li>
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-4 h-4">
+                        <span>Messages</span>
+                    </li>
+                    <li
+                        class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+                        <img src="assets/settings-2.svg" alt="Settings Icon" class="w-4 h-4">
+                        <span>Settings</span>
+                    </li>
+                </ul>
+                <div class="mt-6 px-4">
+                    <button id="toggle-dark-mode"
+                        class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
+                        <i class="fas fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </button>
+                    <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
+                        <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
+                        <p>Rudra Devi</p>
+                        <p>rudra.devi@gmail.com</p>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu Open Button -->
+            <button id="open-mobile-menu" class="lg:hidden fixed top-4 left-4 z-50 text-gray-500 dark:text-gray-300">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Main Content -->
+            <main class="flex-1 bg-gray-100 dark:bg-gray-900 p-8">
+                <!-- Content here -->
+            </main>
+        </div>
+
+        <section class="w-4/5 p-8 pt-6">
+            <header>
+                <h1 class="text-[22px] leading-5 font-semibold mb-8">Welcome! Here's your summary</h1>
+            </header>
+
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+                <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
+                    <div class="flex gap-2 items-center">
+                        <p class="text-gray-500">Total Events</p>
+                        <img src="./assets/informationicon.svg" alt="Icon">
+                    </div>
+                    <div class="flex gap-2 items-center mt-4">
+                        <h2 class="text-2xl font-semibold text-gray-600">100,000</h2>
+                        <img src="./assets/arrow-up-right.svg" alt="Growth">
+                        <span class="text-green-500 text-xs font-semibold leading-3">+5.0%</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
+                    <div class="flex gap-2 items-center">
+                        <p class="text-gray-500">Active Speakers</p>
+                        <img src="./assets/informationicon.svg" alt="Icon">
+                    </div>
+                    <div class="flex gap-2 items-center mt-4">
+                        <h2 class="text-2xl font-semibold text-gray-600">25</h2>
+                        <img src="./assets/arrow-up-right.svg" alt="Growth">
+                        <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
+                    <div class="flex gap-2 items-center">
+                        <p class="text-gray-500">Total Registrations</p>
+                        <img src="./assets/informationicon.svg" alt="Icon">
+                    </div>
+                    <div class="flex gap-2 items-center mt-4">
+                        <h2 class="text-2xl font-semibold text-gray-600">300</h2>
+                        <img src="./assets/arrow-up-right.svg" alt="Growth">
+                        <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm py-8 px-8 border-solid border-2 border-gray-100">
+                    <div class="flex gap-2 items-center">
+                        <p class="text-gray-500">Total Revenue</p>
+                        <img src="./assets/informationicon.svg" alt="Icon">
+                    </div>
+                    <div class="flex gap-2 items-center mt-4">
+                        <h2 class="text-2xl font-semibold text-gray-600">$500,000</h2>
+                        <img src="./assets/arrow-up-right.svg" alt="Growth">
+                        <span class="text-red-500 text-xs font-semibold leading-3">+5.0%</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3 class="text-xl font-semibold mb-4">Event Registrations per month</h3>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="w-full lg:w-1/2 bg-white">
+                        <img src="./assets/Example.svg" alt="Event Chart" class="w-full h-auto rounded-sm">
+                    </div>
+                    <div class="relative w-full lg:w-1/2 overflow-hidden">
+                        <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="carousel-item w-full flex-shrink-0">
+                                <img src="./assets/Slide.svg" alt="Event Image 1" class="w-full h-auto rounded-sm">
+                            </div>
+                            <div class="carousel-item w-full flex-shrink-0">
+                                <img src="./assets/Slide2.svg" alt="Event Image 2" class="w-full h-auto rounded-sm">
+
+                            </div>
+                            <div class="carousel-item w-full flex-shrink-0">
+                                <img src="./assets/Slide3.svg" alt="Event Image 3" class="w-full h-auto rounded-sm">
+                            </div>
+                        </div>
+                        <div class="p-4 absolute bottom-4">
+                            <p class="text-white text-[12px] font-bold mb-2">Latest News & Updates</p>
+                            <p class="text-white text-[12px]">Turpis interdum nunc varius ornare dignissim pretium.
+                                Massa
+                                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat. Fringilla purus, erat
+                                fringilla tincidunt quisque non. Pellentesque in ut tellus.</p>
+                        </div>
+                        <button id="prev" class="absolute left-0 top-[50%] translate-y-[-50%] p-2 rounded-full">
+                            <img src="./assets/Left Button.svg" alt="Prev Icon">
+                        </button>
+                        <button id="next" class="absolute right-0 top-[50%] translate-y-[-50%] p-2 rounded-full">
+                            <img src="./assets/Right Button.svg" alt="Next Icon">
+                        </button>
+                    </div>
+                </div>
+            </section>
 
 
-        <section class="p-4 bg-white text-[14px] leading-5 mt-8 overflow-x-auto">
-            <div class="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
-                <div class="relative w-full lg:w-auto">
-                    <img src="./assets/search.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2" alt="search icon" />
-                    <input type="text" placeholder="Search..." class="border border-gray-100 rounded-sm p-2 pl-10 w-full" />
-                </div>
-        
-                <div class="flex flex-col lg:flex-row gap-2 w-full lg:w-auto">
-                    <select class="border border-gray-100 rounded-sm py-2 w-full">
-                        <option>Date</option>
-                        <option>Ascending</option>
-                        <option>Descending</option>
-                    </select>
-        
-                    <select class="border border-gray-100 rounded-sm py-2 w-full">
-                        <option>Status</option>
-                        <option>Completed</option>
-                        <option>In Progress</option>
-                    </select>
-        
-                    <select class="border border-gray-200 rounded-sm py-2 w-full">
-                        <option>Name</option>
-                        <option>Ascending</option>
-                        <option>Descending</option>
-                    </select>
-                </div>
-        
-                <div class="flex justify-between lg:justify-start items-center gap-2">
-                    <p class="text-sm text-gray-700">Displaying 100 results</p>
-                </div>
+            <section class="p-4 bg-white text-[14px] leading-5 mt-8 overflow-x-auto">
+                <div class="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
+                    <div class="relative w-full lg:w-auto">
+                        <img src="./assets/search.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2"
+                            alt="search icon" />
+                        <input type="text" placeholder="Search..."
+                            class="border border-gray-100 rounded-sm p-2 pl-10 w-full" />
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row gap-2 w-full lg:w-auto">
+                        <select class="border border-gray-100 rounded-sm py-2 w-full">
+                            <option>Date</option>
+                            <option>Ascending</option>
+                            <option>Descending</option>
+                        </select>
+
+                        <select class="border border-gray-100 rounded-sm py-2 w-full">
+                            <option>Status</option>
+                            <option>Completed</option>
+                            <option>In Progress</option>
+                        </select>
+
+                        <select class="border border-gray-200 rounded-sm py-2 w-full">
+                            <option>Name</option>
+                            <option>Ascending</option>
+                            <option>Descending</option>
+                        </select>
+                    </div>
+
+                    <div class="flex justify-between lg:justify-start items-center gap-2">
+                        <p class="text-sm text-gray-700">Displaying 100 results</p>
+                    </div>
                     <div class="flex justify-between items-center gap-2">
                         <p class="text-sm text-gray-600">Sort:</p>
                         <select class="border border-gray-200 rounded-sm p-2 w-auto">
@@ -281,341 +280,350 @@
                             <option>Oldest</option>
                         </select>
                     </div>
-                
-                <div class="flex justify-between lg:justify-start items-center gap-2">
-                    <button class="flex items-center border border-gray-200 rounded-sm ">
-                        <img src="./assets/Icon Button.svg" alt="Action Icon"  />
-                    </button>
-                    <button class="flex items-center space-x-2 text-gray-600 py-2 px-4 rounded-sm shadow">
-                        <img src="./assets/download.svg" />
-                        <span>Export</span>
-                    </button>
-                </div>
-            </div>
-        </section>
-        
 
-        <section>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="hidden md:block overflow-x-auto">
-                    <table class="table-auto w-full text-left  w-full table-auto border-collapse text-[12px] leading-5">
-                        <thead>
-                            <tr class="bg-gray-100">
-                                <th class="p-2">Event Name</th>
-                                <th class="p-2">Date</th>
-                                <th class="p-2">Speaker</th>
-                                <th class="p-2">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <button class="text-blue-500" onclick="showDetails('Event1')">
+                    <div class="flex justify-between lg:justify-start items-center gap-2">
+                        <button class="flex items-center border border-gray-200 rounded-sm ">
+                            <img src="./assets/Icon Button.svg" alt="Action Icon" />
+                        </button>
+                        <button class="flex items-center space-x-2 text-gray-600 py-2 px-4 rounded-sm shadow">
+                            <img src="./assets/download.svg" />
+                            <span>Export</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="hidden md:block overflow-x-auto">
+                        <table
+                            class="table-auto w-full text-left  w-full table-auto border-collapse text-[12px] leading-5">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="p-2">Event Name</th>
+                                    <th class="p-2">Date</th>
+                                    <th class="p-2">Speaker</th>
+                                    <th class="p-2">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <button class="text-blue-500" onclick="showDetails('Event1')">
+                                    <tr class="border-b">
+                                        <td class="p-2 text-14 leading-3 text-gray-600">Cloud Innovation Summit</td>
+                                        <td class="p-2 text-gray-600">2024-10-15</td>
+                                        <td class="p-2 text-gray-600">Jane Doe</td>
+                                        <td class="p-2">
+                                            <span
+                                                class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                        </td>
+
+                                    </tr>
+                                </button>
                                 <tr class="border-b">
-                                    <td class="p-2 text-14 leading-3 text-gray-600">Cloud Innovation Summit</td>
-                                    <td class="p-2 text-gray-600">2024-10-15</td>
-                                    <td class="p-2 text-gray-600">Jane Doe</td>
+                                    <td class="p-2 text-gray-600">Blockchain Revolution Conference</td>
+                                    <td class="p-2 text-gray-600">2024-11-05</td>
+                                    <td class="p-2 text-gray-600">Dr. Peter Smith</td>
+                                    <td class="p-2">
+                                        <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
+                                            Progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">AI in Healthcare Symposium</td>
+                                    <td class="p-2 text-gray-600">2024-12-01</td>
+                                    <td class="p-2 text-gray-600">Dr. Aisha Malik</td>
                                     <td class="p-2">
                                         <span
                                             class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
                                     </td>
-
                                 </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Future of Fintech Forum</td>
+                                    <td class="p-2 text-gray-600">2024-10-25</td>
+                                    <td class="p-2">John Lee</td>
+                                    <td class="p-2">
+                                        <span
+                                            class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Data Analytics in Business</td>
+                                    <td class="p-2 text-gray-600">2024-11-12</td>
+                                    <td class="p-2 text-gray-600">Rachael Moore</td>
+                                    <td class="p-2">
+                                        <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
+                                            Progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Sustainable Energy Expo</td>
+                                    <td class="p-2 text-gray-600">2024-09-28</td>
+                                    <td class="p-2 text-gray-600">Prof. Alan Green</td>
+                                    <td class="p-2">
+                                        <span
+                                            class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Web3 Interfaces Workshop</td>
+                                    <td class="p-2 text-gray-600">2024-10-10</td>
+                                    <td class="p-2 text-gray-600">Kevin Adams</td>
+                                    <td class="p-2">
+                                        <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
+                                            Progress</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Cybersecurity for Startups</td>
+                                    <td class="p-2 text-gray-600">2024-11-19</td>
+                                    <td class="p-2 text-gray-600">Emily Zhang</td>
+                                    <td class="p-2">
+                                        <span
+                                            class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Cybersecurity for Startups</td>
+                                    <td class="p-2 text-gray-600">2024-10-18</td>
+                                    <td class="p-2 text-gray-600">Dr. Maria Hernandez</td>
+                                    <td class="p-2">
+                                        <span
+                                            class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
+                                    </td>
+                                </tr>
+                                <tr class="border-b">
+                                    <td class="p-2 text-gray-600">Tech Safari Mixer</td>
+                                    <td class="p-2 text-gray-600">2024-09-30</td>
+                                    <td class="p-2 text-gray-600"> Guest Panel</td>
+                                    <td class="p-2">
+                                        <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
+                                            Progress</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            </section>
+
+            <!-- mobile -->
+            <section>
+                <div
+                    class="md:hidden space-y-4 text-xs w-full table-auto border-collapse text-[14px] mb-8 text-gray-600 leading-5">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
                             </button>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Blockchain Revolution Conference</td>
-                                <td class="p-2 text-gray-600">2024-11-05</td>
-                                <td class="p-2 text-gray-600">Dr. Peter Smith</td>
-                                <td class="p-2">
-                                    <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
-                                        Progress</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">AI in Healthcare Symposium</td>
-                                <td class="p-2 text-gray-600">2024-12-01</td>
-                                <td class="p-2 text-gray-600">Dr. Aisha Malik</td>
-                                <td class="p-2">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Future of Fintech Forum</td>
-                                <td class="p-2 text-gray-600">2024-10-25</td>
-                                <td class="p-2">John Lee</td>
-                                <td class="p-2">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Data Analytics in Business</td>
-                                <td class="p-2 text-gray-600">2024-11-12</td>
-                                <td class="p-2 text-gray-600">Rachael Moore</td>
-                                <td class="p-2">
-                                    <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
-                                        Progress</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Sustainable Energy Expo</td>
-                                <td class="p-2 text-gray-600">2024-09-28</td>
-                                <td class="p-2 text-gray-600">Prof. Alan Green</td>
-                                <td class="p-2">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Web3 Interfaces Workshop</td>
-                                <td class="p-2 text-gray-600">2024-10-10</td>
-                                <td class="p-2 text-gray-600">Kevin Adams</td>
-                                <td class="p-2">
-                                    <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
-                                        Progress</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Cybersecurity for Startups</td>
-                                <td class="p-2 text-gray-600">2024-11-19</td>
-                                <td class="p-2 text-gray-600">Emily Zhang</td>
-                                <td class="p-2">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Cybersecurity for Startups</td>
-                                <td class="p-2 text-gray-600">2024-10-18</td>
-                                <td class="p-2 text-gray-600">Dr. Maria Hernandez</td>
-                                <td class="p-2">
-                                    <span
-                                        class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded-full">Completed</span>
-                                </td>
-                            </tr>
-                            <tr class="border-b">
-                                <td class="p-2 text-gray-600">Tech Safari Mixer</td>
-                                <td class="p-2 text-gray-600">2024-09-30</td>
-                                <td class="p-2 text-gray-600"> Guest Panel</td>
-                                <td class="p-2">
-                                    <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-full">In
-                                        Progress</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Cloud Innovation Summit</h3>
+                            </div>
+                            <span
+                                class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 px-2 px-2 py-4 bg-gray-50 rounded-md details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Jane Doe</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-10-15</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Blockchain Revolution Conference</h3>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full mt-2 inline-block">In
+                                Progress</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Dr. Peter Smith</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-11-05</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">AI in Healthcare Symposium</h3>
+                            </div>
+                            <span
+                                class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Dr. Aisha Malik</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-12-01</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Future of Fintech Forum</h3>
+                            </div>
+                            <span
+                                class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">John Lee</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-10-25</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Data Analytics in Business</h3>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full mt-2 inline-block">In
+                                Progress</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Rachael Moore</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-11-12</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Sustainable Energy Expo</h3>
+                            </div>
+                            <span
+                                class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Prof. Alan Green</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-09-28</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Web3 Interfaces Workshop</h3>
+                            </div>
+                            <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full mt-2 inline-block">In
+                                Progress</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Kevin Adams</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-10-10</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="flex justify-between items-center">
+                            <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
+                                <img src="assets/chevron-right.svg"
+                                    class="chevron-icon transition-transform duration-300" />
+                            </button>
+                            <div class="flex flex-col items-center flex-grow">
+                                <h3 class="text-sm font-semibold text-center">Cybersecurity for Startups</h3>
+                            </div>
+                            <span
+                                class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
+                        </div>
+                        <div
+                            class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
+                            <div>
+                                <p class="text-gray-700 font-medium">Emily Zhang</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 font-medium">2024-11-19</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </section>
-        
-        <!-- mobile -->
-        <section>
-            <div
-                class="md:hidden space-y-4 text-xs w-full table-auto border-collapse text-[14px] mb-8 text-gray-600 leading-5">
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class="text-sm text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
+            </section>
+
+            <section>
+                <div class="flex justify-between items-center mt-4 mb-8 py-2 px-1 rounded-sm">
+                    <div class="flex space-x-2">
+                        <img src="assets/IconButtonLeft.svg" />
+                        <button>
+                            <img src="assets/1.svg" />
                         </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Cloud Innovation Summit</h3>
-                        </div>
-                        <span
-                            class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 px-2 px-2 py-4 bg-gray-50 rounded-md details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Jane Doe</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-10-15</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
+                        <button>
+                            <img src="assets/2.svg" />
                         </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Blockchain Revolution Conference</h3>
-                        </div>
-                        <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full mt-2 inline-block">In
-                            Progress</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Dr. Peter Smith</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-11-05</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
+                        <button>
+                            <img src="assets/3.svg" />
                         </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">AI in Healthcare Symposium</h3>
-                        </div>
-                        <span
-                            class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
+                        <img src="assets/IconButtonRight.svg" />
                     </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Dr. Aisha Malik</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-12-01</p>
-                        </div>
+                    <div class="flex items-center space-x-2 text-gray-600 text-14 leading-5">
+                        <p class="text-gray-600 mr-2 hidden md:block">Show:</p>
+                        <select class="border border-gray-300 rounded-sm p-2">
+                            <option>10 rows</option>
+                            <option>20 rows</option>
+                            <option>50 rows</option>
+                            <option>100 rows</option>
+                        </select>
                     </div>
                 </div>
+            </section>
 
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
-                        </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Future of Fintech Forum</h3>
-                        </div>
-                        <span
-                            class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">John Lee</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-10-25</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
-                        </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Data Analytics in Business</h3>
-                        </div>
-                        <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full mt-2 inline-block">In
-                            Progress</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Rachael Moore</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-11-12</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
-                        </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Sustainable Energy Expo</h3>
-                        </div>
-                        <span
-                            class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Prof. Alan Green</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-09-28</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class="text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
-                        </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Web3 Interfaces Workshop</h3>
-                        </div>
-                        <span class="bg-blue-100 text-blue-700 px-2 py-1 rounded-full mt-2 inline-block">In
-                            Progress</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Kevin Adams</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-10-10</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow-md">
-                    <div class="flex justify-between items-center">
-                        <button class=" text-blue-500 toggle-btn" onclick="toggleDetails(this)">
-                            <img src="assets/chevron-right.svg"
-                                class="chevron-icon transition-transform duration-300" />
-                        </button>
-                        <div class="flex flex-col items-center flex-grow">
-                            <h3 class="text-sm font-semibold text-center">Cybersecurity for Startups</h3>
-                        </div>
-                        <span
-                            class="bg-green-100 text-green-700 px-2 py-1 rounded-full mt-2 inline-block">Completed</span>
-                    </div>
-                    <div class="flex justify-between hidden mt-2 mt-2 px-2 py-4 bg-gray-50 rounded-lg details-section">
-                        <div>
-                            <p class="text-gray-700 font-medium">Emily Zhang</p>
-                        </div>
-                        <div>
-                            <p class="text-gray-700 font-medium">2024-11-19</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="flex justify-between items-center mt-4 mb-8 py-2 px-1 rounded-sm">
-                <div class="flex space-x-2">
-                    <img src="assets/IconButtonLeft.svg" />
-                    <button>
-                        <img src="assets/1.svg" />
-                    </button>
-                    <button>
-                        <img src="assets/2.svg" />
-                    </button>
-                    <button>
-                        <img src="assets/3.svg" />
-                    </button>
-                    <img src="assets/IconButtonRight.svg" />
-                </div>
-                <div class="flex items-center space-x-2 text-gray-600 text-14 leading-5">
-                    <p class="text-gray-600 mr-2 hidden md:block">Show:</p>
-                    <select class="border border-gray-300 rounded-sm p-2">
-                        <option>10 rows</option>
-                        <option>20 rows</option>
-                        <option>50 rows</option>
-                        <option>100 rows</option>
-                    </select>
-                </div>                
-            </div>
-        </section>
-
-        <!-- <section>
+            <!-- <section>
             <div class="bg-white flex md:hidden lg:hidden xl:hidden justify-between ">
                 <img src="assets/home.svg" alt="Home Picture" class="p-2" />
                 <img src="assets/events.svg" alt="Event Picture" class="p-2" />
@@ -625,16 +633,16 @@
             </div>
         </section> -->
 
-        <section class="lg:hidden">
-            <div class="bg-white flex justify-between p-2">
-                <img src="assets/home.svg" alt="Home" />
-                <img src="assets/events.svg" alt="Events" />
-                <img src="assets/speakers.svg" alt="Speakers" />
-                <img src="assets/reports.svg" alt="Reports" />
-                <img src="assets/profile.svg" alt="Profile" />
-            </div>
+            <section class="lg:hidden">
+                <div class="bg-white flex justify-between p-2">
+                    <img src="assets/home.svg" alt="Home" />
+                    <img src="assets/events.svg" alt="Events" />
+                    <img src="assets/speakers.svg" alt="Speakers" />
+                    <img src="assets/reports.svg" alt="Reports" />
+                    <img src="assets/profile.svg" alt="Profile" />
+                </div>
+            </section>
         </section>
-    </div>
     </section>
 
     <!-- </div> -->
