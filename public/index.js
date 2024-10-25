@@ -1,88 +1,140 @@
-// document.querySelector('.dark-mode-toggle').addEventListener('click', function () {
-//   document.body.classList.toggle('dark-mode');
-// });
+// JS for dark mode toggle and mobile menu
 
-// const darkModeStyles = `
-//     .dark-mode {
-//       background-color: #333;
-//       color: #fff;
-//     }
-  
-//     .dark-mode .sidebar {
-//       background-color: #444;
-//     }
-  
-//     .dark-mode .card {
-//       background-color: #555;
-//     }
-  
-//     .dark-mode .status.completed {
-//       background-color: #218838;
-//     }
-  
-//     .dark-mode .status.in-progress {
-//       background-color: #e0a800;
-//     }
-//   `;
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
+    const openMobileMenuBtn = document.getElementById("open-mobile-menu");
+    const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
+    const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
+
+    // Toggle Mobile Menu
+    openMobileMenuBtn.addEventListener("click", () => {
+        sidebar.classList.remove("-translate-x-full");
+        mobileMenuOverlay.classList.remove("hidden");
+    });
+
+    closeMobileMenuBtn.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        mobileMenuOverlay.classList.add("hidden");
+    });
+
+    mobileMenuOverlay.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        mobileMenuOverlay.classList.add("hidden");
+    });
+
+    // Toggle Dark Mode
+    toggleDarkModeBtn.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sidebar = document.getElementById("sidebar");
+  const openMobileMenuBtn = document.getElementById("open-mobile-menu");
+  const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
+
+  // Ensure these elements are found
+  if (openMobileMenuBtn && closeMobileMenuBtn) {
+    openMobileMenuBtn.addEventListener("click", () => {
+      sidebar.classList.remove("-translate-x-full");
+    });
+
+    closeMobileMenuBtn.addEventListener("click", () => {
+      sidebar.classList.add("-translate-x-full");
+    });
+  }
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const carousel = document.getElementById('carousel');
-  const slides = document.querySelectorAll('.carousel-item');
-  const prevButton = document.getElementById('prev');
-  const nextButton = document.getElementById('next');
+    const carousel = document.getElementById('carousel');
+    const slides = document.querySelectorAll('.carousel-item');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
 
-  let currentIndex = 0;
-  const totalItems = slides.length;
-  const autoRotateInterval = 3000;
-  let autoRotate;
+    let currentIndex = 0;
+    const totalItems = slides.length;
+    const autoRotateInterval = 3000;
+    let autoRotate;
 
-  function updateCarousel() {
-      const offset = -currentIndex * 100;
-      carousel.style.transform = `translateX(${offset}%)`;
-  }
+    function updateCarousel() {
+        const offset = -currentIndex * 100;
+        carousel.style.transform = `translateX(${offset}%)`;
+    }
 
-  function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalItems; 
-      updateCarousel();
-  }
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+    }
 
-  nextButton.addEventListener('click', () => {
-      nextSlide();
-      resetAutoRotate();
-  });
+    nextButton.addEventListener('click', () => {
+        nextSlide();
+        resetAutoRotate();
+    });
 
-  prevButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-      updateCarousel();
-      resetAutoRotate();
-  });
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+        resetAutoRotate();
+    });
 
-  function startAutoRotate() {
-      autoRotate = setInterval(nextSlide, autoRotateInterval);
-  }
+    function startAutoRotate() {
+        autoRotate = setInterval(nextSlide, autoRotateInterval);
+    }
 
-  function resetAutoRotate() {
-      clearInterval(autoRotate);
-      startAutoRotate();
-  }
+    function resetAutoRotate() {
+        clearInterval(autoRotate);
+        startAutoRotate();
+    }
 
-  startAutoRotate();
+    startAutoRotate();
 });
 
 // function toggleDetails(element) {
 //   const details = element.parentElement.nextElementSibling; 
 //   details.classList.toggle('hidden');
-  
+
 //   const chevronIcon = element.querySelector('img');
 //   chevronIcon.classList.toggle('rotate-90');
 // }
 
 function toggleDetails(element) {
-  const details = element.closest('.bg-white').querySelector('.details-section');
-  details.classList.toggle('hidden');
+    const details = element.closest('.bg-white').querySelector('.details-section');
+    details.classList.toggle('hidden');
 
-  const chevronIcon = element.querySelector('.chevron-icon');
-  chevronIcon.classList.toggle('rotate-90');
+    const chevronIcon = element.querySelector('.chevron-icon');
+    chevronIcon.classList.toggle('rotate-90');
 }
 
+
+const sidebar = document.getElementById('sidebar');
+const openIcon = document.getElementById('open');
+const closeIcon = document.getElementById('close-icon');
+const mainContent = document.getElementById('main-content');
+
+openIcon.addEventListener('click', () => {
+    sidebar.classList.toggle('w-64');
+    mainContent.classList.toggle('ml-64');
+});
+
+closeIcon.addEventListener('click', () => {
+    sidebar.classList.toggle('w-64');
+    mainContent.classList.toggle('ml-64');
+});
+
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const themeMode = document.getElementById('theme-mode');
+
+themeToggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    if (document.documentElement.classList.contains('dark')) {
+        themeIcon.classList.replace('bi-toggle-off', 'bi-toggle-on');
+        themeMode.textContent = 'Light Mode';
+    } else {
+        themeIcon.classList.replace('bi-toggle-on', 'bi-toggle-off');
+        themeMode.textContent = 'Dark Mode';
+    }
+});

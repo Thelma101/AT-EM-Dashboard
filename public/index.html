@@ -8,11 +8,12 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="../dist/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
 </head>
 
 <body class="bg-gray-100 flex h-screen">
-    <nav class="w-1/5 bg-gray-800 text-white flex flex-col justify-between p-5">
+    <!-- <nav class="w-1/5 bg-white text-gray-600 flex flex-col justify-between p-5">
         <div class="logo text-center text-xl font-bold mb-8">Full Logo</div>
         <ul class="space-y-6">
             <li><a href="#" class="text-lg">Home</a></li>
@@ -27,7 +28,132 @@
             <button class="w-full py-2 bg-gray-600 text-white text-center">Collapse</button>
             <button class="w-full py-2 mt-2 bg-gray-600 text-white text-center">Dark Mode</button>
         </div>
-    </nav>
+    </nav> -->
+
+    <div class="relative">
+        <!-- Mobile menu button (Hamburger icon) -->
+        <button id="open-mobile-menu" class="absolute top-4 right-4 text-gray-500">
+          <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+        </button>
+      
+        <!-- Sidebar (Mobile Menu) -->
+        <div id="sidebar" class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
+          <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-500">
+            <i class="fas fa-times"></i> <!-- Close Icon -->
+          </button>
+          <nav class="mt-10">
+            <ul>
+              <li class="py-2 px-4">
+                <a href="#" class="flex items-center space-x-2">
+                  <i class="fas fa-home"></i> <!-- Home Icon -->
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="py-2 px-4">
+                <a href="#" class="flex items-center space-x-2">
+                  <i class="fas fa-home"></i> <!-- Home Icon -->
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="py-2 px-4">
+                <a href="#" class="flex items-center space-x-2">
+                  <i class="fas fa-home"></i> <!-- Home Icon -->
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="py-2 px-4">
+                <a href="#" class="flex items-center space-x-2">
+                  <i class="fas fa-home"></i> <!-- Home Icon -->
+                  <span>Home</span>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Sidebar for mobile -->
+        <div class="fixed inset-0 z-50 bg-opacity-75 transition-opacity lg:hidden" id="mobile-menu-overlay"></div>
+        <nav
+          class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"
+          id="sidebar">
+          <div class="p-4 flex items-center justify-between lg:justify-center">
+            <img src="assets/Logo.svg" alt="Full Logo" class="w-24 lg:w-32" />
+            <button id="close-mobile-menu" class="lg:hidden text-gray-500 dark:text-gray-300">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <ul class="mt-6">
+            <!-- Menu Items with Icons -->
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/home.svg" alt="Home Icon" class="w-4 h-4" />
+              <span>Home</span>
+            </li>
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/events.svg" alt="Events Icon" class="w-4 h-4">
+              <span>Events</span>
+            </li>
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/speakers.svg" alt="Speakers Icon" class="w-4 h-4">
+              <span>Speakers</span>
+            </li>
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/reports.svg" alt="Reports Icon" class="w-4 h-4">
+              <span>Reports</span>
+            </li>
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/bell.svg" alt="Notifications Icon" class="w-4 h-4">
+              <span>Notifications</span>
+              <span class="ml-auto text-xs bg-red-600 text-white rounded-full px-2 py-0.5">3</span>
+            </li>
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-4 h-4">
+              <span>Messages</span>
+            </li>
+            <li class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
+              <img src="assets/settings-2.svg" alt="Settings Icon" class="w-4 h-4">
+              <span>Settings</span>
+            </li>
+          </ul>
+          <div class="mt-6 px-4">
+            <button id="toggle-dark-mode" class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
+              <i class="fas fa-moon"></i>
+              <span>Dark Mode</span>
+            </button>
+            <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
+                <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
+              <p>Rudra Devi</p>
+              <p>rudra.devi@gmail.com</p>
+            </div>
+          </div>
+        </nav>
+      
+        <!-- Mobile Menu Open Button -->
+        <button id="open-mobile-menu" class="lg:hidden fixed top-4 left-4 z-50 text-gray-500 dark:text-gray-300">
+          <i class="fas fa-bars"></i>
+        </button>
+      
+        <!-- Main Content -->
+        <main class="flex-1 bg-gray-100 dark:bg-gray-900 p-8">
+          <!-- Content here -->
+        </main>
+      </div>
+      
+      
+      <!-- Main Content Section -->
+      <!-- <div id="main-content" class="main-content p-4 transition-all duration-300">
+        <div class="logo_wrapper flex items-center justify-between">
+          <div class="logo2 text-gray-900 dark:text-white font-medium">Full Logo</div>
+          <span id="btn2" class="md:hidden">
+            <iconify-icon id="open" icon="solar:hamburger-menu-broken" class="text-2xl cursor-pointer text-gray-700 dark:text-white"></iconify-icon>
+          </span>
+        </div>
+        <!-- Add your main content here -->
+      <!-- </div>  -->
+      
 
     <div class="w-4/5 p-8 pt-6">
         <header>
@@ -82,7 +208,7 @@
             </div>
         </section>
 
-        <!-- <section>
+        <section>
             <h3 class="text-xl font-semibold mb-4">Event Registrations per month</h3>
             <div class="flex flex-col lg:flex-row gap-4">
                 <div class="w-full lg:w-1/2 bg-white">
@@ -115,80 +241,30 @@
                     </button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="p-6 bg-white text-[14px] leading-5 mt-8">
-            <div class="flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center">
-                <div class="relative w-full lg:w-auto">
-                    <img src="./assets/search.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2"
-                        alt="search icon" />
-                    <input type="text" placeholder="Search..."
-                        class="border border-gray-100 rounded-sm p-2 pl-10 w-full lg:w-64" />
-                </div>
-
-                <div class="flex flex-col lg:flex-row gap-2 w-full lg:w-auto">
-                    <select class="border border-gray-100 rounded-sm py-2 w-full lg:w-48">
-                        <option>Date</option>
-                        <option>Ascending</option>
-                        <option>Descending</option>
-                    </select>
-
-                    <select class="border border-gray-100 rounded-sm py-2 w-full lg:w-48">
-                        <option>Status</option>
-                        <option>Completed</option>
-                        <option>In Progress</option>
-                    </select>
-
-                    <select class="border border-gray-200 rounded-sm py-2 w-full lg:w-48">
-                        <option>Name</option>
-                        <option>Ascending</option>
-                        <option>Descending</option>
-                    </select>
-                </div>
-
-                <div class="flex justify-between lg:justify-start items-center gap-2">
-                    <p class="text-sm text-gray-700">Displaying 100 results</p>
-                    <div class="flex items-center gap-2">
-                        <p class="text-sm text-gray-600">Sort:</p>
-                        <select class="border border-gray-200 rounded-sm p-2 w-auto">
-                            <option>Most Recent</option>
-                            <option>Oldest</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="flex justify-between lg:justify-start items-center gap-2">
-                    <button class="text-gray-500">
-                        <img src="./assets/Icon Button.svg" alt="Action Icon" class="w-6 h-6" />
-                    </button>
-                    <button class="flex items-center space-x-2 text-gray-500 py-2 px-4 rounded-sm shadow">
-                        <img src="./assets/download.svg" />
-                        <span>Export</span>
-                    </button>
-                </div>
-            </div>
-        </section>  -->
 
         <section class="p-4 bg-white text-[14px] leading-5 mt-8 overflow-x-auto">
             <div class="flex flex-col gap-2 lg:flex-row lg:justify-between lg:items-center">
                 <div class="relative w-full lg:w-auto">
                     <img src="./assets/search.svg" class="absolute left-3 top-1/2 transform -translate-y-1/2" alt="search icon" />
-                    <input type="text" placeholder="Search..." class="border border-gray-100 rounded-sm p-2 pl-10 w-full lg:w-64" />
+                    <input type="text" placeholder="Search..." class="border border-gray-100 rounded-sm p-2 pl-10 w-full" />
                 </div>
         
                 <div class="flex flex-col lg:flex-row gap-2 w-full lg:w-auto">
-                    <select class="border border-gray-100 rounded-sm py-2 w-full lg:w-48">
+                    <select class="border border-gray-100 rounded-sm py-2 w-full">
                         <option>Date</option>
                         <option>Ascending</option>
                         <option>Descending</option>
                     </select>
         
-                    <select class="border border-gray-100 rounded-sm py-2 w-full lg:w-48">
+                    <select class="border border-gray-100 rounded-sm py-2 w-full">
                         <option>Status</option>
                         <option>Completed</option>
                         <option>In Progress</option>
                     </select>
         
-                    <select class="border border-gray-200 rounded-sm py-2 w-full lg:w-48">
+                    <select class="border border-gray-200 rounded-sm py-2 w-full">
                         <option>Name</option>
                         <option>Ascending</option>
                         <option>Descending</option>
@@ -197,20 +273,20 @@
         
                 <div class="flex justify-between lg:justify-start items-center gap-2">
                     <p class="text-sm text-gray-700">Displaying 100 results</p>
-                    <div class="flex items-center gap-2">
+                </div>
+                    <div class="flex justify-between items-center gap-2">
                         <p class="text-sm text-gray-600">Sort:</p>
                         <select class="border border-gray-200 rounded-sm p-2 w-auto">
                             <option>Most Recent</option>
                             <option>Oldest</option>
                         </select>
                     </div>
-                </div>
-        
+                
                 <div class="flex justify-between lg:justify-start items-center gap-2">
-                    <button class="text-gray-500">
-                        <img src="./assets/Icon Button.svg" alt="Action Icon" class="w-6 h-6" />
+                    <button class="flex items-center border border-gray-200 rounded-sm ">
+                        <img src="./assets/Icon Button.svg" alt="Action Icon"  />
                     </button>
-                    <button class="flex items-center space-x-2 text-gray-500 py-2 px-4 rounded-sm shadow">
+                    <button class="flex items-center space-x-2 text-gray-600 py-2 px-4 rounded-sm shadow">
                         <img src="./assets/download.svg" />
                         <span>Export</span>
                     </button>
