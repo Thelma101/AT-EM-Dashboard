@@ -263,7 +263,4 @@ document.addEventListener("DOMContentLoaded", function () {
 //     }
 
 //     // Dark Mode Toggle
-//     toggleDarkModeBtn.addEventListener("click", () => {
-//         document.documentElement.classList.toggle("");
-//     });
 // });
