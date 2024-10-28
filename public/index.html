@@ -8,142 +8,92 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="../dist/output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <style>
+        body {
+            transition: background-color 0.3s ease;
+        }
 
+        .dark {
+            background-color: #1a202c;
+            color: #cbd5e0;
+        }
+    </style>
 </head>
 
-<body class="">
-    <!-- <nav class="w-1/5 bg-white text-gray-600 flex flex-col justify-between p-5">
-        <div class="logo text-center text-xl font-bold mb-8">Full Logo</div>
-        <ul class="space-y-6">
-            <li><a href="#" class="text-lg">Home</a></li>
-            <li><a href="#" class="text-lg">Events</a></li>
-            <li><a href="#" class="text-lg">Speakers</a></li>
-            <li><a href="#" class="text-lg">Reports</a></li>
-            <li><a href="#" class="text-lg">Notifications</a></li>
-            <li><a href="#" class="text-lg">Messages</a></li>
-            <li><a href="#" class="text-lg">Settings</a></li>
-        </ul>
-        <div class="mt-8">
-            <button class="w-full py-2 bg-gray-600 text-white text-center">Collapse</button>
-            <button class="w-full py-2 mt-2 bg-gray-600 text-white text-center">Dark Mode</button>
-        </div>
-    </nav> -->
-
-    <!-- <section>
-    <div class="relative">
-        <!-- Mobile menu button (Hamburger icon) 
-                 <button id="open-mobile-menu" class="absolute top-4 right-4 text-gray-500">
-            <i class="fas fa-bars"></i> 
-        </button>
-        <div id="sidebar"
-            class="fixed inset-y-0 left-0 w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300">
-            <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-500">
-                <i class="fas fa-times"></i>
-            </button>
-            <nav class="mt-10">
-                <ul>
-                    <li class="py-2 px-4">
-                        <a href="#" class="flex items-center space-x-2">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="py-2 px-4">
-                        <a href="#" class="flex items-center space-x-2">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="py-2 px-4">
-                        <a href="#" class="flex items-center space-x-2">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li class="py-2 px-4">
-                        <a href="#" class="flex items-center space-x-2">
-                            <i class="fas fa-home"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-</section> -->
-
-    <!-- <section class=" flex flex-row"> -->
-    <section class="flex flex-row min-h-screen">
-        <!-- <nav class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"
-            id="sidebar"> -->
-        <nav id="sidebar"
+<body>
+    <section class="flex">
+        <nav id="sidebar" id="sidebar"
             class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full">
-            <div class="p-4 flex items-center justify-between lg:justify-center">
-                <img src="assets/Logo.svg" alt="Full Logo" class="w-24 lg:w-32" />
+            <!-- class="text-gray-600 shadow-lg h-full lg:fixed lg:w-64 lg:block lg:translate-x-0 transform transition-transform duration-300 lg:duration-0 -translate-x-full"> -->
+            <div class="p-4 flex items-start">
+                <a href="#">
+                    <img src="assets/Logo.svg" alt="Full Logo" class="w-14 lg:w-16 justify-start" />
+                </a>
                 <button id="close-mobile-menu" class="lg:hidden text-gray-500 dark:text-gray-300">
-                    <i class="fas fa-times"></i>
+                    <img src="assets/bell.svg" alt="Close Icon" class="w-4 h-4" />
                 </button>
             </div>
             <ul class="mt-6">
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/home.svg" alt="Home Icon" class="w-4 h-4" />
+                    <img src="assets/home 2.svg" alt="Home Icon" class="w-6 h-6" />
                     <span>Home</span>
                 </li>
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/events.svg" alt="Events Icon" class="w-4 h-4">
+                    <img src="assets/calendar.svg" alt="Events Icon" class="w-4 h-4">
                     <span>Events</span>
                 </li>
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/speakers.svg" alt="Speakers Icon" class="w-4 h-4">
+                    <img src="assets/speaker.svg" alt="Speakers Icon" class="w-5 h-5">
                     <span>Speakers</span>
                 </li>
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/reports.svg" alt="Reports Icon" class="w-4 h-4">
+                    <img src="assets/report.svg" alt="Reports Icon" class="w-4 h-4">
                     <span>Reports</span>
                 </li>
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/bell.svg" alt="Notifications Icon" class="w-4 h-4">
+                    <img src="assets/bell.svg" alt="Notifications Icon" class="w-6 h-6">
                     <span>Notifications</span>
                     <span class="ml-auto text-xs bg-red-600 text-white rounded-full px-2 py-0.5">3</span>
                 </li>
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-4 h-4">
+                    <img src="assets/double-chat-bubble.svg" alt="Messages Icon" class="w-6 h-6">
                     <span>Messages</span>
                 </li>
                 <li
                     class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg">
-                    <img src="assets/settings-2.svg" alt="Settings Icon" class="w-4 h-4">
+                    <img src="assets/settings-2.svg" alt="Settings Icon" class="w-6 h-6">
                     <span>Settings</span>
                 </li>
+                <li id="collapse-sidebar"
+                    class="px-4 py-2 flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg cursor-pointer">
+                    <img src="assets/double-chevron-left.svg" alt="Collapse Icon" class="w-6 h-6">
+                    <span>Collapse</span>
+                </li>
+
             </ul>
             <div class="mt-6 px-4">
-                <!-- <button id="toggle-dark-mode"
-                    class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
-                    <i class="fas fa-moon"></i>
-                    <span>Dark Mode</span>
-                </button> -->
 
+                <!-- <button id="toggle-dark-mode" -->
                 <button id="toggle-dark-mode"
-                    class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
-                    <i class="fas fa-moon"></i>
-                    <span>Dark Mode</span>
+                    class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2"></button>
+                <!-- class="w-full flex items-center space-x-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2"> -->
+                <img src="assets/Base Switch.svg" alt="Settings Icon" class="w-6 h-6">
+                <!-- <span>Dark Mode</span> -->
+                <span id="theme-mode">Dark Mode</span>
                 </button>
 
-
-                <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
-                    <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
-                    <p>Rudra Devi</p>
-                    <p>rudra.devi@gmail.com</p>
-                </div>
+            </div>
+            <div class="flex mt-4 text-sm text-gray-600 dark:text-gray-300">
+                <img src="assets/Avatar.svg" alt="Avatar" class="w-12 h-12 rounded-full" />
+                <p>Rudra Devi</p>
+                <p>rudra.devi@gmail.com</p>
+            </div>
             </div>
         </nav>
     </section>
@@ -153,7 +103,7 @@
     </button>
 
     <!-- <main class="flex-1 flex-row bg-gray-100 dark:bg-gray-900 p-8"> -->
-    <main class="flex-1 lg:ml-64 bg-gray-100 dark:bg-gray-900 p-8">
+    <main class="flex-1 lg:ml-64 bg-gray-100 dark:bg-gray-900 ">
         <section class=" bg-gray-100 p-8 pt-6">
             <header>
                 <h1 class="text-[22px] leading-5 font-semibold mb-8">Welcome! Here's your summary</h1>
@@ -622,22 +572,23 @@
                     </div>
                 </div>
             </section>
-
-            <section class="lg:hidden">
-                <div class="bg-white flex justify-between p-2">
-                    <img src="assets/home.svg" alt="Home" />
-                    <img src="assets/events.svg" alt="Events" />
-                    <img src="assets/speakers.svg" alt="Speakers" />
-                    <img src="assets/reports.svg" alt="Reports" />
-                    <img src="assets/profile.svg" alt="Profile" />
+            <section class="lg:hidden mx-auto">
+                <div class="bg-white flex justify-between p-2 items-center rounded-lg shadow-md">
+                    <img src="assets/home.svg" alt="Home"
+                        class="w-1/5 h-auto hover:scale-110 transition-transform duration-200 cursor-pointer" />
+                    <img src="assets/events.svg" alt="Events"
+                        class="w-1/5 h-auto hover:scale-110 transition-transform duration-200 cursor-pointer" />
+                    <img src="assets/speakers.svg" alt="Speakers"
+                        class="w-1/5 h-auto hover:scale-110 transition-transform duration-200 cursor-pointer" />
+                    <img src="assets/reports.svg" alt="Reports"
+                        class="w-1/5 h-auto hover:scale-110 transition-transform duration-200 cursor-pointer" />
+                    <img src="assets/profile.svg" alt="Profile"
+                        class="w-1/5 h-auto hover:scale-110 transition-transform duration-200 cursor-pointer" />
                 </div>
             </section>
         </section>
         </section>
     </main>
-
-
-
 
     <!-- </div> -->
     <script src="index.js"></script>
