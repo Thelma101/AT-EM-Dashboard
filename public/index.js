@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// // JS for dark mode toggle and mobile menu
 
 // // document.addEventListener("DOMContentLoaded", function () {
 // //     const sidebar = document.getElementById("sidebar");
