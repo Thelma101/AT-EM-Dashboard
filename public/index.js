@@ -91,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const collapseBtn = document.getElementById("collapse-sidebar");
 
     collapseBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("w-20"); // Adjust width to a smaller size
-        sidebar.classList.toggle("lg:w-64"); // Toggle between full width and collapsed
+        sidebar.classList.toggle("w-20");
+        sidebar.classList.toggle("lg:w-64");
 
         // Hide sidebar labels when collapsed
         sidebar.querySelectorAll("span").forEach(label => {
@@ -100,8 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
 
 // // document.addEventListener("DOMContentLoaded", function () {
 // //     const sidebar = document.getElementById("sidebar");
