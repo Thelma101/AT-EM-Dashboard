@@ -238,26 +238,4 @@ document.addEventListener("DOMContentLoaded", function () {
 //     const openMobileMenuBtn = document.getElementById("open-mobile-menu");
 //     const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
 //     const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
-
-//     // Mobile Menu Toggle
-//     if (openMobileMenuBtn && closeMobileMenuBtn) {
-//         openMobileMenuBtn.addEventListener("click", () => {
-//             sidebar.classList.remove("-translate-x-full");
-//             if (mobileMenuOverlay) mobileMenuOverlay.classList.remove("hidden");
-//         });
-
-//         closeMobileMenuBtn.addEventListener("click", () => {
-//             sidebar.classList.add("-translate-x-full");
-//             if (mobileMenuOverlay) mobileMenuOverlay.classList.add("hidden");
-//         });
-
-//         if (mobileMenuOverlay) {
-//             mobileMenuOverlay.addEventListener("click", () => {
-//                 sidebar.classList.add("-translate-x-full");
-//                 mobileMenuOverlay.classList.add("hidden");
-//             });
-//         }
-//     }
-
-//     // Dark Mode Toggle
 // });
