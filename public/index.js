@@ -220,22 +220,4 @@ document.addEventListener("DOMContentLoaded", function () {
 // const themeToggle = document.getElementById('theme-toggle');
 // const themeIcon = document.getElementById('theme-icon');
 // const themeMode = document.getElementById('theme-mode');
-
-// themeToggle.addEventListener('click', () => {
-//     document.documentElement.classList.toggle('dark');
-//     if (document.documentElement.classList.contains('dark')) {
-//         themeIcon.classList.replace('bi-toggle-off', 'bi-toggle-on');
-//         themeMode.textContent = 'Light Mode';
-//     } else {
-//         themeIcon.classList.replace('bi-toggle-on', 'bi-toggle-off');
-//         themeMode.textContent = 'Dark Mode';
-//     }
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const sidebar = document.getElementById("sidebar");
-//     const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
-//     const openMobileMenuBtn = document.getElementById("open-mobile-menu");
-//     const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
-//     const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
 // });
