@@ -99,7 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
             label.classList.toggle("hidden");
         });
     });
-});
+}
+);
 
 // // document.addEventListener("DOMContentLoaded", function () {
 // //     const sidebar = document.getElementById("sidebar");
