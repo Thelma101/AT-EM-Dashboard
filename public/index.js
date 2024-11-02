@@ -141,30 +141,3 @@ document.addEventListener("DOMContentLoaded", function () {
 //     });
 //   }
 // });
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const carousel = document.getElementById('carousel');
-//     const slides = document.querySelectorAll('.carousel-item');
-//     const prevButton = document.getElementById('prev');
-//     const nextButton = document.getElementById('next');
-
-//     let currentIndex = 0;
-//     const totalItems = slides.length;
-//     const autoRotateInterval = 3000;    
-//     let autoRotate;
-
-//     function updateCarousel() {
-//         const offset = -currentIndex * 100;
-//         carousel.style.transform = `translateX(${offset}%)`;
-//     }
-
-//     function nextSlide() {
-//         currentIndex = (currentIndex + 1) % totalItems;
-//         updateCarousel();
-//     }
-
-//     nextButton.addEventListener('click', () => {
-//         nextSlide();
-//         resetAutoRotate();
-//     });
