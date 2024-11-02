@@ -169,21 +169,4 @@ document.addEventListener("DOMContentLoaded", function () {
 //         resetAutoRotate();
 //     });
 
-//     prevButton.addEventListener('click', () => {
-//         currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-//         updateCarousel();
-//         resetAutoRotate();
-//     });
-
-//     function startAutoRotate() {
-//         autoRotate = setInterval(nextSlide, autoRotateInterval);
-//     }
-
-//     function resetAutoRotate() {
-//         clearInterval(autoRotate);
-//         startAutoRotate();
-//     }
-
-//     startAutoRotate();
-// });
 
