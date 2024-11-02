@@ -168,5 +168,3 @@ document.addEventListener("DOMContentLoaded", function () {
 //         nextSlide();
 //         resetAutoRotate();
 //     });
-
-
