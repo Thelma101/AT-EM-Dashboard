@@ -187,10 +187,3 @@ document.addEventListener("DOMContentLoaded", function () {
 //     startAutoRotate();
 // });
 
-// function toggleDetails(element) {
-//     const details = element.closest('.bg-white').querySelector('.details-section');
-//     details.classList.toggle('hidden');
-
-//     const chevronIcon = element.querySelector('.chevron-icon');
-//     chevronIcon.classList.toggle('rotate-90');
-// }
