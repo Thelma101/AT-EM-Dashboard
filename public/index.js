@@ -194,24 +194,3 @@ document.addEventListener("DOMContentLoaded", function () {
 //     const chevronIcon = element.querySelector('.chevron-icon');
 //     chevronIcon.classList.toggle('rotate-90');
 // }
-
-
-// const sidebar = document.getElementById('sidebar');
-// const openIcon = document.getElementById('open');
-// const closeIcon = document.getElementById('close-icon');
-// const mainContent = document.getElementById('main-content');
-
-// openIcon.addEventListener('click', () => {
-//     sidebar.classList.toggle('w-64');
-//     mainContent.classList.toggle('ml-64');
-// });
-
-// closeIcon.addEventListener('click', () => {
-//     sidebar.classList.toggle('w-64');
-//     mainContent.classList.toggle('ml-64');
-// });
-
-// const themeToggle = document.getElementById('theme-toggle');
-// const themeIcon = document.getElementById('theme-icon');
-// const themeMode = document.getElementById('theme-mode');
-// });
