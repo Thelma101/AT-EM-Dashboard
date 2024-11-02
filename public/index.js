@@ -102,12 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 );
 
-// // document.addEventListener("DOMContentLoaded", function () {
-// //     const sidebar = document.getElementById("sidebar");
-// //     const mobileMenuOverlay = document.getElementById("mobile-menu-overlay");
-// //     const openMobileMenuBtn = document.getElementById("open-mobile-menu");
-// //     const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
-// //     const toggleDarkModeBtn = document.getElementById("toggle-dark-mode");
 
 // //     // Toggle Mobile Menu
 // //     openMobileMenuBtn.addEventListener("click", () => {
