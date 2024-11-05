@@ -102,10 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 );
 
-
-
-
-
 // Toggle Mobile Menu
 // //     openMobileMenuBtn.addEventListener("click", () => {
 // //         sidebar.classList.remove("-translate-x-full");
