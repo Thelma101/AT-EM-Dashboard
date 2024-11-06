@@ -129,14 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //   const openMobileMenuBtn = document.getElementById("open-mobile-menu");
 //   const closeMobileMenuBtn = document.getElementById("close-mobile-menu");
 
-//   // Ensure these elements are found
-//   if (openMobileMenuBtn && closeMobileMenuBtn) {
-//     openMobileMenuBtn.addEventListener("click", () => {
-//       sidebar.classList.remove("-translate-x-full");
-//     });
 
-//     closeMobileMenuBtn.addEventListener("click", () => {
-//       sidebar.classList.add("-translate-x-full");
-//     });
 //   }
 // });
