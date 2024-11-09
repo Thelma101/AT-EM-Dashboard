@@ -102,25 +102,25 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 );
 
-// Toggle Mobile Menu
-//     openMobileMenuBtn.addEventListener("click", () => {
-//         sidebar.classList.remove("-translate-x-full");
-//         mobileMenuOverlay.classList.remove("hidden");
-//     });
+Toggle Mobile Menu
+    openMobileMenuBtn.addEventListener("click", () => {
+        sidebar.classList.remove("-translate-x-full");
+        mobileMenuOverlay.classList.remove("hidden");
+    });
 
-//     closeMobileMenuBtn.addEventListener("click", () => {
-//         sidebar.classList.add("-translate-x-full");
-//         mobileMenuOverlay.classList.add("hidden");
-//     });
+    closeMobileMenuBtn.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        mobileMenuOverlay.classList.add("hidden");
+    });
 
-//     mobileMenuOverlay.addEventListener("click", () => {
-//         sidebar.classList.add("-translate-x-full");
-//         mobileMenuOverlay.classList.add("hidden");
-//     });
+    mobileMenuOverlay.addEventListener("click", () => {
+        sidebar.classList.add("-translate-x-full");
+        mobileMenuOverlay.classList.add("hidden");
+    });
 
-//     // Toggle Dark Mode
-//     toggleDarkModeBtn.addEventListener("click", () => {
-//         document.documentElement.classList.toggle("dark");
-//     });
-// });
+    // Toggle Dark Mode
+    toggleDarkModeBtn.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+    });
+});
 
