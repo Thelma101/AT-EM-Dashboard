@@ -81,7 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(autoRotate);
             startAutoRotate();
         }
-
         startAutoRotate();
     }
 });
@@ -122,4 +121,3 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleDarkModeBtn.addEventListener("click", () => {
         document.documentElement.classList.toggle("dark");
     });
-
