@@ -98,8 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
             label.classList.toggle("hidden");
         });
     });
-}
-);
+});
 
 // Toggle Mobile Menu
     openMobileMenuBtn.addEventListener("click", () => {
