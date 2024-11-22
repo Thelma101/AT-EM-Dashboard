@@ -123,4 +123,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // TODO
-    // FETCH ALL LIST ENDPOINTS
